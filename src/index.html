@@ -7,7 +7,27 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="translation-popup ">
+  <header>
+    <div class="header-wrap container">
+      <div class="logo">
+        <img src="/img/content/start-image.png" alt="logo">
+      </div>
+
+      <form action="">
+        <label>First Name<br><br>
+          <input class="form-input" type="text" name="lname" placeholder="your first name *" required>
+        </label>
+        <label>Last Name<br><br>
+          <input class="form-input" type="text" name="fname" placeholder="your last name *" required>
+        </label>
+
+        <input class="btn-start" type="submit" value="start!">
+      </form>
+
+      <!-- <a class="btn-start" href="#"><span class="btn">start</span></a> -->
+    </div>
+  </header>
+  <div class="translation-popup hide">
     <div class="translation-wrapper">
        <!-- <button class="popup__button-close"><i class="fa fa-times"></i></button> -->
        <div class="translation-popup-text">
@@ -53,6 +73,6 @@
       </div>
     </div>
   </div>
-  <div class="popups-overlay"></div>
+  <div class="popups-overlay hide"></div>
 </body>
 </html>

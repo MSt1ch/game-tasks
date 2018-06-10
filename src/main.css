@@ -21,6 +21,11 @@ body {
 body {
   min-height: 100%;
   font-family: "TitilliumWeb", sans-serif;
+  background: url(/img/content/backgroud-img.jpg) no-repeat;
+  background-size: cover;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(0,0,0,.4);
 }
 h1,
 h2,
@@ -107,17 +112,86 @@ button {
   position: relative;
 }
 
-body{
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
+
 
 
 /* popup */
-body{
-  position: relative;
-  background-color: #222;
+header{
+  height: 100%;
 }
+.header-wrap{
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+form{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  -ms-align-items: center;
+  align-items: center;
+  /* display: none; */
+}
+label{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+input:focus,{
+  border: 1px solid rrgb(235, 125, 75);
+}
+
+input.form-input{
+  border: 1px solid rgb(200, 198, 198);
+  background-color: #fff;
+  font-size: 2rem;
+  font-style: italic;
+  color: rgb(124, 124, 124);
+  line-height: 1.2;
+  text-align: left;
+  width: 400px;
+  height: 36px;
+  padding: 1px 15px 4px;
+  margin-bottom: 30px;
+}
+
+.btn-start{
+  margin-top: 30px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.125;
+  transition: all .25s ease;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 4px;
+  width: 293px;
+  height: 70px;
+  border-bottom: 4px solid;
+  transition: all .25s ease;
+  background-color: rgb(235, 125, 75);
+  border-bottom-color: rgb(200, 106, 64);
+}
+
+.btn-start:hover{
+  background-color: rgb(23,194,164);
+  border-color: rgb(20,165,140);
+}
+
+
+
 .translation-popup,
 .create-word-popup,
 .speech-popup,

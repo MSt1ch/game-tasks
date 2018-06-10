@@ -1,8 +1,7 @@
 
 import style from "./main.css";
 import $ from 'jquery';
-import fullPage from 'fullPage.js/dist/jquery.fullPage.js';
-import fullPageCss from 'fullPage.js/dist/jquery.fullPage.css';
+
 
 import jquerySortable from 'jquery-ui-sortable-npm/jquery-ui-sortable.js';
 
