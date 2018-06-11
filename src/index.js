@@ -17,8 +17,9 @@ const translationPopup = document.querySelector(".translation-popup");
 const popupsOverlay = document.querySelector(".popups-overlay");
 const translationPopupText = document.querySelector('.translation-popup-text');
 
-
-
+const userForm = document.querySelector('.user-form');
+const submitForm = document.querySelector('.btn-start');
+let currentUser = {};
 
 ///////////////////  speech word
 const speechRepeatBtn = document.querySelector(".speech-repeat-btn");
@@ -26,6 +27,26 @@ const speechRepeatBtn = document.querySelector(".speech-repeat-btn");
 const speechSubmit = document.querySelector(".speech-submit");
 const speachWord = randomWord;
 const synth = window.speechSynthesis;
+
+
+
+
+
+  function addUser(e){
+    e.stopPropagation();;
+    for (let i =0; i < userForm.length; i++){
+      const el = userForm[i];
+      if (el.type !== "submit" && el.type !== "button"){
+        currentUser[el.name] = el.value;
+      }
+
+    }
+
+    console.log(currentUser);
+    return false;
+  };
+
+
 
 
   function speak(randomWord){
@@ -63,7 +84,10 @@ const synth = window.speechSynthesis;
   });
 
 
-
+  // const png1 = new Image();
+  // png1.src = 'img/content/logo.png';
+  //
+  // userForm.innerHTML =`<div> <img src="${png1.src}"></div>`;
 ////////////////////// random dictionary word
 
 

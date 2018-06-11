@@ -16,13 +16,18 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-            options: { minimize: true }
+            options: { minimize: true,
+                       interpolate: true,
+                     }
           }
         ]
       },
+      { test: /\.jpg$/, use: [ "file-loader" ] },
+      { test: /\.png$/, use: [ "file-loader" ] },
+
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader?url=false"]
       }
     ]
   },

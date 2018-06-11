@@ -10,12 +10,12 @@
   <header>
     <div class="header-wrap container">
       <div class="logo">
-        <img src="/img/content/start-image.png" alt="logo">
+        <img src="img/content/start-image.png" alt="logo">
       </div>
 
-      <form action="">
+      <form onsubmit="addUser(event); return false" class="user-form">
         <label>First Name<br><br>
-          <input class="form-input" type="text" name="lname" placeholder="your first name *" required>
+          <input class="form-input" type="text" name="lname" placeholder="your first name *" autofocus="autofocus" required>
         </label>
         <label>Last Name<br><br>
           <input class="form-input" type="text" name="fname" placeholder="your last name *" required>

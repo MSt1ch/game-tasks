@@ -21,7 +21,7 @@ body {
 body {
   min-height: 100%;
   font-family: "TitilliumWeb", sans-serif;
-  background: url(/img/content/backgroud-img.jpg) no-repeat;
+  background: url(img/content/backgroud-img.jpg) no-repeat;
   background-size: cover;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -139,7 +139,6 @@ form{
   -ms-flex-direction: column;
   flex-direction: column;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   -ms-align-items: center;
   align-items: center;
   /* display: none; */
@@ -149,12 +148,14 @@ label{
   font-size: 2rem;
   font-weight: bold;
 }
-input:focus,{
-  border: 1px solid rrgb(235, 125, 75);
+input:focus{
+  border: 2px solid rgb(235, 125, 75);
 }
 
-input.form-input{
-  border: 1px solid rgb(200, 198, 198);
+
+input{
+  border-radius: 2px;
+  border: 2px solid rgb(200, 198, 198);
   background-color: #fff;
   font-size: 2rem;
   font-style: italic;
@@ -165,9 +166,11 @@ input.form-input{
   height: 36px;
   padding: 1px 15px 4px;
   margin-bottom: 30px;
+  transition: all .25s ease;
 }
 
 .btn-start{
+  cursor: pointer;
   margin-top: 30px;
   font-size: 2rem;
   color: rgb(255, 255, 255);
@@ -183,9 +186,11 @@ input.form-input{
   transition: all .25s ease;
   background-color: rgb(235, 125, 75);
   border-bottom-color: rgb(200, 106, 64);
+  font-style: normal;
 }
 
 .btn-start:hover{
+  cursor: pointer;
   background-color: rgb(23,194,164);
   border-color: rgb(20,165,140);
 }
