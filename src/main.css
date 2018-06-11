@@ -195,6 +195,75 @@ input{
   border-color: rgb(20,165,140);
 }
 
+.magics-popup-heading{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.magics-text{
+  margin-bottom: 40px;
+}
+.magics-text:last-child{
+  margin-bottom: 0;
+}
+.magics-item{
+  min-width: 150px;
+  padding: 5px;
+  display: inline-block;
+  margin-right: 150px;
+  border-radius: 6px;
+  transition: all .25s ease;
+  border: 3px solid;
+}
+
+.magics-item.--damage{
+  border-color: red;
+}
+
+.magics-item.--helth{
+  border-color: green;
+}
+
+.magics-item:hover{
+  background-color: #fff;
+  box-shadow: 3px 2px 16px 2px rgba(0,0,0,.4);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.magics-item:last-child{
+  margin-right: 0;
+}
+.magics-popup{
+  padding-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 500px;
+  background-color: rgb(150,192,194);
+  text-align: center;
+  box-shadow: 3px 2px 16px 2px rgba(0,0,0,.4);
+  border-radius: 3px;
+  z-index: 11;
+}
+.magics-item-title{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.magics-item__img img{
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.magics-item-descr{
+  margin-top: 5px;
+  font-size: 1.6em;
+}
 
 
 .translation-popup,
