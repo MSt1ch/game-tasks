@@ -59,6 +59,10 @@ module.exports = {
         to: './fonts'
       },
       {
+          from: './src/sounds',
+          to: './sounds'
+      },
+      {
         from: './src/img',
         to: './img'
       }
