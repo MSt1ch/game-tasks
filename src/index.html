@@ -7,6 +7,42 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="wrapper">
+      <div class="title">
+          <h1>Mutant Fighting Cup</h1>
+      </div>
+      <div class="healthBar" id="healthBar">
+
+          <div class="firstPlayer">
+              <div class="firstName" id="firstNamePlayer">
+                  <span id="firstName">Игрок1</span>
+              </div>
+              <div class="firstHealth" id="firstHealthPlayer">
+                  <span>Health</span>
+                  <progress id="firstHealth" max="100" value="20"></progress>
+              </div>
+          </div>
+          <div class="secondPlayer">
+              <div class="secondName" id="secondNamePlayer">
+                  <span id="secondName">ОГР ТОМ</span>
+              </div>
+              <div class="secondHealth" id="secondHealthPlayer">
+                  <span>Health</span>
+                  <progress id="secondHealth" max="100" value="20"></progress>
+              </div>
+          </div>
+      </div>
+      <div class="battlefield" id="battlefield">
+          <img id="pattern" src="./img/scene/scene1.png" width="1050" height="680">
+          <img class="mainCharacter" id="mainCharacter" src="./img/mainCharacter/main.png" width="300" height="300">
+          <div class="secondPlayerImg">
+
+          </div>
+      </div>
+      <div class="footerBar" id="footerBar">
+
+      </div>
+  </div>
   <header>
     <div class="header-wrap container">
       <div class="logo">
@@ -27,7 +63,7 @@
       <!-- <a class="btn-start" href="#"><span class="btn">start</span></a> -->
     </div>
   </header>
-  <div class="magics-popup">
+  <div class="magics-popup hide">
     <div class="magics-wrapper">
        <!-- <button class="popup__button-close"><i class="fa fa-times"></i></button> -->
       <div class="magics-text">

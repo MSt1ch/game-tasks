@@ -215,15 +215,18 @@ input{
   margin-right: 150px;
   border-radius: 6px;
   transition: all .25s ease;
-  border: 3px solid;
+  border: 3px solid rgb(231,241,248);
+  box-shadow: 1px 2px 1px 1px rgba(0,0,0,.4);
 }
 
 .magics-item.--damage{
-  border-color: red;
+  background-color: rgb(235, 125, 75);
+
 }
 
 .magics-item.--helth{
-  border-color: green;
+
+  background-color: rgb(23,194,164);
 }
 
 .magics-item:hover{
@@ -402,4 +405,54 @@ input{
 }
 .create-word-submit.-submit-popup{
   margin-left: 0;
+}
+
+
+
+
+
+
+/* Стили Ильи */
+
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1050px;
+    height: 930px;
+    z-index: 5;
+}
+.title{
+    height: 50px;
+    text-align: center;
+}
+.title > h1{
+    color: white;
+}
+.healthBar{
+    height: 100px;
+    background-color: blanchedalmond;
+}
+.battlefield {
+    height: 680px;
+    position: relative;
+}
+.footerBar {
+    height: 100px;
+    background-color: blanchedalmond;
+}
+
+.mainCharacter {
+    position: absolute;
+    top: 280px;
+}
+.firstPlayer {
+    float: left;
+    font-size: 2rem;
+}
+.secondPlayer {
+    float: right;
+    font-size: 2rem;
 }
